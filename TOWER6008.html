@@ -1,0 +1,120 @@
+---
+layout: contentnew
+title: TOWER.6008
+---
+<script src="/assets/js/slideshow.js"></script>
+
+
+<style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex:33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+.column.active{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100; /* Bring to front */
+  opacity: 1; /* Show image */
+  background-color: white;
+}
+
+.column.active img{
+  max-width: 60%;
+  display: block;
+}
+
+.headerimage .text{
+  margin:  0.1em;
+}
+
+.headerimage h2{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 0px;
+  position: relative;
+}
+
+.headerimage a{
+  font-family: "panel", serif;
+	font-weight: 500;
+	font-style: italic;
+  color: #5236ff;
+  text-decoration: none;
+}
+
+.headerimage a:hover{
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .headerimg img{
+    margin-top: 120px;
+    padding-top: 60px;
+  }
+.headerimage hr{
+  margin:0%
+}
+
+}
+</style>
+
+<script src="assets/js/slideshow.js"></script>
+
+
+<section class="main-content">
+   <div class="headerimage">
+    <img src="/assets/images/Tower-01.png" width="100%" alt="TOWER.6008 Main Screen">
+    <br>
+    <h2>TOWER.6008</h2><hr><br>
+    <p>
+      A small design prototype with a heavy emphasis on unique aesthetics and mood, explore surrealist rooms in a mysterious modular tower.
+      <br><br>
+      Created in 2021 with Unity.</p>
+      <br><a href="https://charlottegalvin.itch.io/tower6008" class=hover  target="_blank" rel="noopener noreferrer"><p>Download on itch.io</p></a>
+   </div>
+   
+   <div class="slideshow-container">
+    <div class="slideshow-images">
+      <img src="/assets/images/6008_01.png" alt="Image 1">
+      <img src="/assets/images/6008_02.png" alt="Image 2">
+      <img src="/assets/images/6008_03.png" alt="Image 3">
+    </div>
+  </div>
+
+   <div class="row">
+   <div class="column">
+    <img src ="/assets/images/6008Concept_01.png" width="100%">
+    <img src ="/assets/images/6008Concept_03.png" width="100%">
+   </div>
+
+   <div class="column">
+    <img src ="/assets/images/6008Concept_02.png" width="100%">
+    <img src ="/assets/images/6008Concept_04.png" width="100%">
+   </div>
+
+   <div class="column">
+    <img src ="/assets/images/6008Concept_05.png" width="100%">
+    <img src ="/assets/images/6008Concept_06.png" width="100%">
+   </div>
+   </div>
+  </section>

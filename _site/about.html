@@ -1,0 +1,195 @@
+<!-- _layouts/contentabout.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About | Portfolio</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/doq1vyl.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3">
+        <script src="assets/js/slideshow.js"></script>
+
+        <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+            body {
+            font-family: "Source Sans 3", sans-serif;
+            }
+
+    footer {
+        position: fixed;left: 0; bottom: 0%;padding: 12px;
+    }
+
+    @media (max-width: 600px) {
+        footer{
+            position: relative;
+        }
+    }
+
+
+    
+    </style>
+        
+    </head>
+
+<body>
+    <header>
+         <div class="header">
+			<a href="/" class="logo">Charlotte Galvin</a>
+			<div class="header-right">
+				<a href="/">work</a>
+				<a class="active" href="about">about</a>
+			</div>
+		</div> 
+    </header>
+
+    <main>
+        <script src="/assets/js/slideshow.js"></script>
+
+
+<style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex:50%;
+  max-width: 50%;
+  padding: 0 16px;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  vertical-align: middle;
+  opacity: 1;
+  border-radius: 22px;
+  animation: fadeInAnimation ease 1.3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}
+
+.column.active{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100; /* Bring to front */
+  opacity: 1; /* Show image */
+  background-color: white;
+}
+
+.column.active img{
+  max-width: 60%;
+  display: block;
+  
+}
+
+@keyframes fadeInAnimation {
+            0% {
+              transform: translateX(-50%);
+                opacity: 0;
+            }
+
+            100% {
+              transform:translateX(0%);
+                opacity: 1;
+            }
+          }
+
+
+.headerimage .text{
+  margin:  0.1em;
+}
+
+.headerimage h2{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 0px;
+  position: relative;
+}
+
+.headerimage a{
+  font-family: "panel", serif;
+	font-weight: 500;
+	font-style: italic;
+  color: #5236ff;
+  text-decoration: none;
+}
+
+.headerimage a:hover{
+	font-weight: 700;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  
+  .headerimg img{
+    margin-top: 120px;
+    padding-top: 60px;
+  }
+.headerimage hr{
+  margin:0%
+}
+.headerimage h2 {
+  margin-top: 60px;
+  font-size: 1.5em;
+  border-bottom: solid rgb(255, 0, 0) 0px;
+  }
+
+  .footer{
+    position: relative;
+  }
+}
+</style>
+
+<script src="assets/js/slideshow.js"></script>
+
+
+<section class="main-content">
+   <h2>About Me</h2>
+
+   <div class="row">
+   <div class="column">
+    <img src ="/assets/images/Self_Image_Purple.png" width="100%">
+   </div>
+
+   <div class="column">
+    <p>
+      I am a designer with a background in Games Design, currently living and working in Melbourne, Australia.
+      <br> This site contains a portfolio of my work across creative practices, with a focus on digital and visual design.
+      <br><br>
+      I'm interested in creating worlds that don't look like our own, with an eye for bold colours and aesthetics.       
+      <br><br>
+      When I’m not obsessing over making things look good, you can find me doing laps at the roller rink or plotting my next big adventure.
+      <br><br>
+      </p></a>
+   </div>
+   </div>
+  </section>
+
+    </main>
+
+    <footer>
+        <p>email me at <a href="mailto:charlottemgalvin@gmail.com">charlottemgalvin@gmail.com</a></p>
+    </footer>
+</body>
+</html>

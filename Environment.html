@@ -1,0 +1,105 @@
+---
+layout: contentnew
+title: Environments
+---
+<style>
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex:50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+.column.active{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100; /* Bring to front */
+  opacity: 1; /* Show image */
+  background-color: white;
+}
+
+.column.active img{
+  max-width: 60%;
+  display: block;
+}
+
+.headerimage .text{
+  margin:  0.1em;
+}
+
+.headerimage h2{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 0px;
+  position: relative;
+}
+
+.headerimage a{
+  font-family: "panel", serif;
+	font-weight: 500;
+	font-style: italic;
+  color: #5236ff;
+  text-decoration: none;
+}
+
+.headerimage a:hover{
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .headerimg img{
+    margin-top: 120px;
+    padding-top: 60px;
+  }
+.headerimage hr{
+  margin:0%;
+}
+
+}
+
+</style>
+<script src="/assets/js/slideshow.js"></script>
+
+<section class="main-content">
+   <div class="headerimage">
+    <div class="slideshow-container">
+      <div class="slideshow-images">
+        <img src="/assets/images/Environment.png" alt="Environment Concept">
+        <img src="/assets/images/Environment01.png" alt="Environment Concept Autumn">
+        <img src="/assets/images/Environment02.png" alt="Environment Concept Winter">
+      </div>
+    </div>
+<br>
+    <h2>Environment Concept</h2><hr><br>
+    <p>
+      Environment concept, 2020.
+      <br><br>
+      
+   </div>
+   <br>
+   <div class="row">
+   <div class="column">
+    <img src ="/assets/images/Reject_Island_01.png" width="100%">
+   </div>
+   <div class="column">
+    <img src ="/assets/images/Reject_Island_02.png" width="100%">
+   </div>
+   </div>
+  </section>
