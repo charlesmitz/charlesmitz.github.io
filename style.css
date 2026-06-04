@@ -1,0 +1,317 @@
+/* =============================================
+   Fonts
+   ============================================= */
+
+.ojuju-bold {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fragment-mono-regular {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fragment-mono-regular-italic {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* =============================================
+   CSS Variables
+   ============================================= */
+:root {
+  --blue: #1696FF;
+  --blue-medium: rgba(22, 150, 255, 0.5);
+  --blue-light: rgba(22, 150, 255, 0.3);
+  --black: #111111;
+  --white: #ffffff;
+  --black-light: #c8c8c8;
+  --black-medium: rgba(0, 0, 0, 0.3);
+  --font-display: "Ojuju", sans-serif;
+  --font-body: "Fragment Mono", monospace;
+  --nav-height: 36px;
+  --page-padding: 28px;
+--nav-padding: 16px;
+  --max-width: 720px;
+  --transparent: #ffffff00;
+  --page-padding-sides: 48px;
+}
+
+
+ 
+/* =============================================
+   Reset & Base
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =============================================
+   Main
+   ============================================= */
+.main {
+  flex: 1;
+  padding-top: 120px; /* clear fixed nav */
+}
+ 
+/* =============================================
+   Hero — diagonal banner
+   =========================================
+   ==== */
+@keyframes wiggle {
+  /*
+  0%   { transform:scale(0.9) rotate(0deg);}
+  20%  { transform: rotate(-4deg); }
+  40%  { transform: rotate(3.5deg); }
+  60%  { transform:   rotate(-3deg); }
+  80%  { transform:  rotate(2deg); }
+  100% { transform:scale(1)  rotate(0deg); }
+*/
+
+
+}
+
+.hero {
+  padding: 25vh 48px 25vh 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+ 
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  aspect-ratio: 1361/163;
+  opacity: 0;
+}
+
+.hero-banner.loaded {
+  opacity: 1;
+    animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
+      transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@keyframes fadeUp {
+ from { opacity: 0; translate: 0 40px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+ 
+.hero-banner.loaded:hover {
+ transform: rotate(-3deg) scale(0.95);
+}
+
+
+/* =============================================
+   Bio
+   ============================================= */
+.bio {
+  padding: var(--page-padding-sides);
+  padding-bottom: 36px;
+}
+ 
+.bio-text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--black);
+}
+
+/*
+    Content header
+    */
+.content {
+    margin: var(--page-padding-sides);
+    margin-top: 0px;
+    padding-bottom:240px;
+}
+
+.content-heading {
+    border-top: solid 1px var(--blue);
+  font-family: var(--font-display);
+  font-size: 40px;
+  color: var(--blue);
+}
+
+
+/* =============================================
+   Grid layouts
+   ============================================= */
+.grid {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+ 
+.grid--2col {
+  grid-template-columns: 1fr 1fr;
+}
+ 
+.grid--3col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+ 
+/* Scroll reveal — each card starts hidden */
+.card {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ 
+.card.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* =============================================
+   Cards
+   ============================================= */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.card-link {
+  display: block;
+  
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  transition : border-color 0.2s, transform 0.2s;
+
+  overflow: hidden;
+  isolation: isolate; 
+  transform: translateZ(0);
+  aspect-ratio: 16/9;
+  transition : outline-color 0.2s, transform 0.2s;
+
+}
+ 
+.card-link:hover {
+  border-color: var(--blue);
+  box-shadow: 0 8px 0 0 var(--blue);
+ transform: translateY(-8px) translateZ(0);
+}
+
+.card-link:hover ~ .card-footer{
+  color: var(--blue);
+}
+ 
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+    scale: 1.01; /* slightly overfill to hide edge bleed */
+}
+/*
+.card-link:hover img{
+    opacity: 0.4;
+    filter: saturate(0);
+}
+ */
+.card-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding-top: 8px;
+  padding-left: 2px;
+  padding-bottom: 48px;
+}
+
+.card-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+.card-sub {
+  font-family: var(--font-body);
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+ 
+/* =============================================
+   Responsive
+   ============================================= */
+@media (max-width: 560px) {
+.main{
+    padding-top: 96px;
+}
+
+.body{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.bio{
+    padding:16px;
+    padding-bottom: 24px;
+}
+.bio-text{
+    font-size: 0.9rem;
+}
+
+    .content {
+     padding-left: 8px;
+     padding-right: 8px;
+     margin:8px;
+    } 
+
+    .card-footer{
+        padding-bottom: 24px;
+    }
+
+  .grid--2col {
+    grid-template-columns: 1fr;
+  }
+  .grid--3col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero {
+    padding: 8px;
+    padding-top:24px;
+    padding-bottom: 48px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-banner {
+  /*  padding: 14px 24px 14px 16px; */
+  padding: 0px;
+  }
+}
+ 
+@media (max-width: 420px) {
+  .grid--3col {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+   line-height: 1.6;
+}
+
+main{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-link {
+  display: block;
+  width: min(860px, 100%);
+  aspect-ratio: 1424/873;  /* adjust to your image's ratio */
+
+  text-decoration: none;
+  transform-origin: center center;
+  animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
+  transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+}
+.image-link:hover {
+  transform: rotate(-1.5deg) scale(1.015);
+}
+.image-link:active {
+  transform: rotate(1deg) scale(0.99);
+}
+@keyframes fadeUp {
+ from { opacity: 0; translate: 0 40px; }
+  to   { opacity: 1; translate: 0 0; }
+}

@@ -1,137 +1,261 @@
----
-layout: default
-title: Home
----
-<style>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+<!DOCTYPE html>
+<html>
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex:50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/nav.css">
 
-.column img {
-  animation: fadeInAnimation ease 1.3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-  margin-top: 8px;
-  vertical-align: middle;
-  opacity: 1;
-}
+    <title>Charlotte Mitzi Galvin</title>
+ 
+ 
+ <!--  <link rel="icon" type="image/x-icon" href="/Images/SVG/Logo.svg"> --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-.image-holder{
-  margin-top: 8px;
-  margin-bottom: -28pt;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet">
 
-.image-holder img{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  vertical-align: middle;
-  opacity: 1;
-  filter: blur(0px);
-  filter: brightness(1);
-  transition: all 0.3s ease;
-  z-index: 1;
-  border-radius: 22px;
-}
+  </head>
 
-.image-holder .text{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 4px;
-  position:relative;
-  bottom: 44px;
-  left:8px;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  visibility:hidden;
-}
+  <nav class="nav">
+    <a href="/" class="nav-link active">home</a>
+    <a href="/about.html" class="nav-link">about</a>
+    <a href="/contact.html" class="nav-link">contact</a>
+  </nav>
 
-.image-holder:hover img{
-  filter: blur(2px);
-  filter: brightness(.2);
+  <body>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <!-- Hero: diagonal title banner -->
+      <!-- Hero: banner graphic -->
+      <section class="hero">
+        <img src="Images/SVG/Logo_Blue.svg" alt="Charlotte Mitzi Galvin"
+          class="hero-banner" fetchpriority="high" />
+      </section>
+
+      <!-- Bio -->
+      <section class="bio">
+        <p class="bio-text">
+          Charlotte Galvin is a designer working in games. Her primary specialty
+          is all things 2D design, with a focus on unique UI.
+        </p>
+      </section>
+
+      <!-- Work grid -->
+      <section class="content">
+        <h2 class="content-heading">Work</h2>
+
+        <!-- Row 1: 2 large cards -->
+        <div class="grid grid--2col">
+          <article class="card">
+            <a href="/Pages/mydreampc.html" class="card-link">
+              <img src="/Images/MDPC/MDPCBanner.png" alt="Project 1"
+                class="card-image" />
+            </a>
+            <footer class="card-footer">
+              <span class="card-label">My Dream PC</span>
+              <span class="card-sub">Game</span>
+            </footer>
+          </article>
+          <article class="card">
+            <a href="/Pages/rejectisland.html" class="card-link">
+              <img src="/Images/RejectIsland/RI_Banner.png" alt="Project 1"
+                class="card-image" />
+            </a>
+            <footer class="card-footer">
+              <span class="card-label">Reject Island</span>
+              <span class="card-sub">Game</span>
+            </footer>
+          </article>
+        </div>
+
+        <!-- Row 1: 2 large cards -->
+        <!-- Hide empties 
+            <div class="grid grid--2col">
+ <article class="card">
+          <a href="/Pages/reshapingnz.html" class="card-link">
+            <img src="/Images/Placeholder.png" alt="Project 1" class="card-image" />
+          </a>
+          <footer class="card-footer">
+            <span class="card-label">Reshaping Plastics NZ</span>
+            <span class="card-sub">Interactive</span>
+          </footer>
+        </article>
+
+        <article class="card">
+          <a href="/Pages/gamesofconsequence.html" class="card-link">
+            <img src="/Images/Placeholder.png" alt="Project 1" class="card-image" />
+          </a>
+          <footer class="card-footer">
+            <span class="card-label">Games of Consequence</span>
+            <span class="card-sub">Web</span>
+          </footer>
+        </article>
+        
+      </div>
+-->
+        <!-- Row 3: 3 small cards -->
+        <div class="grid grid--3col">
+          <article class="card">
+            <a href="/Pages/tower6008.html" class="card-link"
+              style="aspect-ratio: 4/3;">
+              <img src="Images/Tower/TowerHomeBanner.png" alt="Project 1"
+                class="card-image" />
+            </a>
+            <footer class="card-footer">
+              <span class="card-label">Tower.6008</span>
+              <span class="card-sub">Game</span>
+            </footer>
+          </article>
+          <article class="card">
+            <a href="/Pages/environment.html" class="card-link"
+              style="aspect-ratio: 4/3;">
+              <img src="/Images/Concept/ConceptBanner.png" alt="Project 1"
+                class="card-image" />
+            </a>
+            <footer class="card-footer">
+              <span class="card-label">Environment Concept</span>
+              <span class="card-sub">Illustration</span>
+            </footer>
+          </article>
+          <article class="card">
+            <a href="/Pages/showcase.html" class="card-link"
+              style="aspect-ratio: 4/3;">
+              <img src="/Images/Showcase/Showcase02.png" alt="Project 1"
+                class="card-image" />
+            </a>
+            <footer class="card-footer">
+              <span class="card-label">RMIT Games Showcase 2021</span>
+              <span class="card-sub">Web</span>
+            </footer>
+          </article>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-col">
+        <span class="footer-name"> <a href="/" class="footer-link">Charlotte
+            Mitzi Galvin</a></span>
+        <span class="footer-year">2026</span>
+      </div>
+      <div class="footer-col">
+        <a href="/about.html" class="footer-link">About</a>
+      </div>
+      <div class="footer-col">
+        <a href="/contact.html" class="footer-link">Contact</a>
+      </div>
+    </footer>
+
+    <script>
+  document.querySelectorAll('.hero-banner').forEach(img => {
+  if (img.complete) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('loaded'));
   }
+});
+</script>
 
-.image-holder:hover .text{
-  visibility:visible;
-  opacity: 100%;
+    <script>
+    const grids = document.querySelectorAll('.grid');
+ 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const grid = entry.target;
+          const cards = grid.querySelectorAll('.card');
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add('is-visible'), i * 150);
+          });
+          observer.unobserve(grid);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+ 
+    grids.forEach(grid => observer.observe(grid));
+  </script>
+
+    <script>
+const COLOURS = ['blue', 'pink', 'orange', 'green'];
+
+// Get the next colour in the cycle
+function nextColour(current) {
+  const idx = COLOURS.indexOf(current);
+  return COLOURS[(idx + 1) % COLOURS.length];
 }
 
+// Map colour names to your actual CSS values
+const CSS_VALUES = {
+  blue:   { full: '#1696ff', medium: 'rgba(22, 150, 255, 0.5)', light: 'rgba(22, 150, 255, 0.3)'},
+  pink:   { full: '#d51553', medium: 'rgb(213, 21, 83, 0.5)', light: 'rgb(213, 21, 83, 0.3)'},
+  orange:  { full: '#E6600C', medium: 'rgb(230, 96, 12, 0.5)', light: 'rgb(230, 96, 12, 0.3)'},
+  green:   { full: '#5c9e00', medium: 'rgb(92, 158, 0, 0.5)', light: 'rgb(92, 158, 0, 0.3)'},
+};
 
-@keyframes fadeInAnimation {
-            0% {
-              transform: translateX(-50%);
-                opacity: 0;
-            }
+function applyColour(colour) {
+  document.documentElement.style.setProperty('--blue', CSS_VALUES[colour].full);
+  document.documentElement.style.setProperty('--blue-medium', CSS_VALUES[colour].medium);
+  document.documentElement.style.setProperty('--blue-light', CSS_VALUES[colour].light);
 
-            100% {
-              transform:translateX(0%);
-                opacity: 1;
-            }
-          }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+  document.querySelectorAll('img[src*="Logo_"]').forEach(img => {
+    img.src = img.src.replace(/Logo_\w+\.svg/, `Logo_${colour.charAt(0).toUpperCase() + colour.slice(1)}.svg`);
+  });
 }
 
-</style>
+/*
+// ── On every page load: advance the colour ──────────────
+const saved = localStorage.getItem('accentColour') || 'blue';
+const current = nextColour(saved);   // cycle forward each visit
+localStorage.setItem('accentColour', current);
+applyColour(current);
 
+*/
+/*
+// ── Logo click: advance again immediately ───────────────
+document.querySelector('.hero')?.addEventListener('click', e => {
+  e.preventDefault();
+  const now = localStorage.getItem('accentColour');
+  const next = nextColour(now);
+  localStorage.setItem('accentColour', next);
+  applyColour(next);
+  // then navigate home
+  window.location.href = '/';
+});
+*/
 
-<section class="main-content">
-    <div class="Discription">
-		<h2 id="about">Hi, I'm Charlotte. <br>
-		I make cool things come to life.</h2>
-	</div>
+// index.js
 
-	<div class="row"> 
-    <div class="column">
-      <div class="image-holder">
-        <a href="/MyDreamPC"><img src="assets/images/MyDreamPC.png" style="width:100%" class=hover alt="My Dream PC Banner"></a>
-          <p class=text>My Dream PC</p>
-      </div>
+// On click: advance, set a flag, then navigate
+document.querySelector('.hero')?.addEventListener('click', e => {
+  e.preventDefault();
+  const now = localStorage.getItem('accentColour');
+  const next = nextColour(now);
+  localStorage.setItem('accentColour', next);
+  sessionStorage.setItem('skipAdvance', 'true'); // 🚩 set flag
+  applyColour(next);
+  window.location.href = '/';
+});
 
-      <div class="image-holder">
-        <a href="/TOWER6008"> <img src="assets/images/Tower-01.png" style="width:100%" class=hover alt="Tower 6008 Main Menu"></a>
-        <p class=text>TOWER.6008</p>
-      </div>
+// On page load: only advance if we didn't just click
+if (sessionStorage.getItem('skipAdvance') === 'true') {
+  sessionStorage.removeItem('skipAdvance'); // clear for next time
+  applyColour(localStorage.getItem('accentColour')); // just apply, don't advance
+} else {
+  const current = localStorage.getItem('accentColour') || 'blue';
+  const next = nextColour(current);
+  localStorage.setItem('accentColour', next);
+  applyColour(next);
+}
 
-      <div class="image-holder">
-        <a href="/RMITShowcase"><img src="assets/images/Showcase.gif" style="width:100%" class=hover alt="Animated GIF of RMIT Showcase Exterior"></a>
-        <p class=text>RMIT Games Showcase 2021</p>
-      </div>
+</script>
 
-      
-  </div>
-  
-  <div class="column">
-    <div class="image-holder">
-      <a href="/RejectIsland"><img src="assets/images/RejectIsland.png" style="width:100%" class=hover alt="Reject Island Banner"></a>
-        <p class=text>Reject Island</p>
-    </div>
+  </body>
 
-    <div class="image-holder">
-      <a href="/CurioCity"><img src="assets/images/CurioCity.png" style="width:100%" class=hover alt="CurioCity Banner"></a>
-        <p class=text>People of CurioCity</p>
-    </div>
-
-    <div class="image-holder">
-      <a href="/Environment"><img src="assets/images/Environment.png" style="width:100%" class=hover alt="Environment Concept Art"></a>
-       <p class=text>Environment Concept</p>
-     </div>
-    
-    
-  </div> 
-</div>
-</section>
+</html>

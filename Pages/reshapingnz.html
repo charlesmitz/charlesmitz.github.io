@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="/folio.css">
+    <link rel="stylesheet" href="/nav.css">
+
+    <script src="/foliocarousel.js" defer></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Reshaping Plastics NZ - Charlotte Mitzi Galvin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Ojuju:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<nav class="nav">
+    <a href="/" class="nav-link">home</a>
+    <a href="/about.html" class="nav-link">about</a>
+    <a href="/contact.html" class="nav-link">contact</a>
+</nav>
+
+<body>
+    <main>
+        <div class="page">
+
+            <!-- ── Drag-scroll gallery ── -->
+            <div class="gallery-track-wrapper">
+                <div class="gallery-track" id="gallery">
+
+                    <!-- Replace src values with your actual images -->
+                    <div class="gallery-card">
+                        <img src="/Images/Placeholder.png" alt="Placeholder" draggable="false" />
+                    </div>
+                    <div class="gallery-card">
+                        <img src="/Images/Placeholder.png" alt="Placeholder" draggable="false" />
+                    </div>
+                </div>
+            </div>
+
+            <section class="content">
+                <h2 class="content-heading">Reshaping Plastics NZ</h2>
+
+                <!-- ── 8-col text section ── -->
+                <section class="project-info">
+
+                    <!-- Cols 1–5 : project description -->
+                    <div class="info-main">
+                        <p>
+                            Lorem ipsum.
+                        </p><br><br>
+                        <p>
+                            Lorem ipsum.
+                        </p>
+                    </div>
+
+                    <!-- Cols 7–8 : meta -->
+                    <aside class="info-meta">
+
+                        <div class="meta-block">
+
+                            <div class="meta-block">
+                                <div class="meta-label">Links</div>
+                                <div class="meta-value">
+                                    <a href="https://www.rmitgamedesignshowcase.com/graduategallery" target="_blank">Website</a>
+                                </div>
+                            </div>
+
+                            <div class="meta-block">
+                                <div class="meta-label">Year</div>
+                                <div class="meta-value">2023 - Ongoing</div>
+                            </div>
+
+                            <div class="meta-block">
+                                <div class="meta-label">Role</div>
+                                <div class="meta-value">Interface Designer</div>
+                            </div>
+
+                    </aside>
+                </section>
+        </div><!-- /page -->
+    </main>
+
+    <!--Footer-->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-col">
+            <span class="footer-name"> <a href="/" class="footer-link">Charlotte Mitzi Galvin</a></span>
+            <span class="footer-year">2026</span>
+        </div>
+        <div class="footer-col">
+            <a href="/about.html" class="footer-link">About</a>
+        </div>
+        <div class="footer-col">
+            <a href="/contact.html" class="footer-link">Contact</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const COLOURS = ['blue', 'pink', 'orange', 'green'];
+
+    function nextColour(current) {
+        const idx = COLOURS.indexOf(current);
+        return COLOURS[(idx + 1) % COLOURS.length];
+    }
+
+    // Map colour names to your actual CSS values
+    const CSS_VALUES = {
+        blue: { full: '#1696ff', medium: 'rgba(22, 150, 255, 0.5)', light: 'rgba(22, 150, 255, 0.3)' },
+        pink: { full: '#d51553', medium: 'rgb(213, 21, 83, 0.5)', light: 'rgb(213, 21, 83, 0.3)' },
+        orange: { full: '#E6600C', medium: 'rgb(230, 96, 12, 0.5)', light: 'rgb(230, 96, 12, 0.3)' },
+        green: { full: '#5c9e00', medium: 'rgb(92, 158, 0, 0.5)', light: 'rgb(92, 158, 0, 0.3)' },
+    };
+
+    function applyColour(colour) {
+        document.documentElement.style.setProperty('--blue', CSS_VALUES[colour].full);
+        document.documentElement.style.setProperty('--blue-medium', CSS_VALUES[colour].medium);
+        document.documentElement.style.setProperty('--blue-light', CSS_VALUES[colour].light);
+    }
+
+    // ── Run on every page: just read and apply, don't advance ──
+    const saved = localStorage.getItem('accentColour') || 'blue';
+    applyColour(saved);
+</script>
+
+</html>

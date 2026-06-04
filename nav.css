@@ -1,0 +1,146 @@
+/* =============================================
+   CSS Variables
+   ============================================= */
+:root {
+  --blue: #1696FF;
+  --blue-medium: rgba(22, 150, 255, 0.5);
+  --blue-light: rgba(22, 150, 255, 0.3);
+  --black: #111111;
+  --white: #ffffff;
+  --black-light: #c8c8c8;
+  --black-medium: rgba(0, 0, 0, 0.3);
+  --font-display: "Ojuju", sans-serif;
+  --font-body: "Fragment Mono", monospace;
+  --nav-height: 36px;
+  --page-padding: 28px;
+--nav-padding: 16px;
+  --max-width: 720px;
+  --transparent: #ffffff00;
+  --page-padding-sides: 48px;
+}
+
+/* =============================================
+   Fonts
+   ============================================= */
+
+.ojuju-bold {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fragment-mono-regular {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fragment-mono-regular-italic {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+/* =============================================
+   Fixed Navigation
+   ============================================= */
+.nav {
+  position: fixed;
+  top:  var(--nav-padding);
+  left: var(--nav-padding);
+  z-index: 100;
+  display: flex;
+  gap: 4px;
+}
+ 
+.nav-link {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 16px;
+  border: 1px solid var(--transparent);
+  background: var(--blue-medium);
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.2s;
+}
+ 
+.nav-link:hover,
+.nav-link.active {
+  background: var(--blue-light);
+  border: 1px solid var(--blue);
+   box-shadow: 0 4px 0 0 var(--blue);
+   transform: translateY(-4px);
+}
+
+/* =============================================
+   Footer
+   ============================================= */
+.footer {
+  border-top: 1px solid var(--blue);
+  padding: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+ 
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+ 
+.footer-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--black);
+}
+ 
+.footer-year {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--black-medium);
+}
+ 
+.footer-link {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--black);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+ 
+.footer-link:hover {
+  color: var(--blue);
+}
+
+
+@media (max-width: 560px) {
+  
+  .footer {
+    gap: 24px;
+    padding: 16px;
+  }
+  .footer-name{
+    font-size: 0.8rem;
+     text-align: center;
+  }
+  .footer-year{
+    font-size: 0.8rem;
+     text-align: center;
+  }
+  .footer-link{
+    font-size: 0.8rem;
+      text-align: center
+  }
+}

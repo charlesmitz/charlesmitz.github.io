@@ -1,141 +1,173 @@
----
-layout: contentabout
-title: About
----
-<script src="/assets/js/slideshow.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="/nav.css">
+  <link rel="stylesheet" href="/about.css">
 
 
-<style>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+  <title>About</title>
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex:50%;
-  max-width: 50%;
-  padding: 0 16px;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-.column img {
-  margin-top: 8px;
-  margin-bottom: 16px;
-  vertical-align: middle;
-  opacity: 1;
-  border-radius: 22px;
-  animation: fadeInAnimation ease 1.3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Ojuju:wght@200..800&display=swap"
+    rel="stylesheet">
 
-.column.active{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 100; /* Bring to front */
-  opacity: 1; /* Show image */
-  background-color: white;
-}
-
-.column.active img{
-  max-width: 60%;
-  display: block;
-  
-}
-
-@keyframes fadeInAnimation {
-            0% {
-              transform: translateX(-50%);
-                opacity: 0;
-            }
-
-            100% {
-              transform:translateX(0%);
-                opacity: 1;
-            }
-          }
+</head>
 
 
-.headerimage .text{
-  margin:  0.1em;
-}
 
-.headerimage h2{
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  padding: 0px;
-  position: relative;
-}
+<nav class="nav">
+  <a href="/" class="nav-link">home</a>
+  <a href="/about.html" class="nav-link active">about</a>
+  <a href="/contact.html" class="nav-link">contact</a>
+</nav>
 
-.headerimage a{
-  font-family: "panel", serif;
-	font-weight: 500;
-	font-style: italic;
-  color: #5236ff;
-  text-decoration: none;
-}
-
-.headerimage a:hover{
-	font-weight: 700;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  
-  .headerimg img{
-    margin-top: 120px;
-    padding-top: 60px;
-  }
-.headerimage hr{
-  margin:0%
-}
-.headerimage h2 {
-  margin-top: 60px;
-  font-size: 1.5em;
-  border-bottom: solid rgb(255, 0, 0) 0px;
-  }
-
-  .footer{
-    position: relative;
-  }
-}
-</style>
-
-<script src="assets/js/slideshow.js"></script>
+<body>
 
 
-<section class="main-content">
-   <h2>About Me</h2>
+  <main class="main">
+    <div class="content">
+      <div class="about-layout">
+        <h2 class="about-content-heading reveal">About</h2>
+        <!-- ── ABOUT SECTION ─────────────────────── -->
+        <section class="about-section">
 
-   <div class="row">
-   <div class="column">
-    <img src ="/assets/images/Self_Image_Purple.png" width="100%">
-   </div>
+          <!-- Col 1: heading + bio text -->
+          <div class="col col--text reveal">
+            <p class="about-body">
+              I'm a multi-disciplinary designer with a background in game design, currently living and working in
+              Melbourne, Australia. This site contains a portfolio of my work across creative practices, with a focus on
+              digital and visual
+              design.
+            </p>
 
-   <div class="column">
-    <p>
-      I'm a multi-disciplinary designer with a background in Game Design, currently living and working in Melbourne, Australia.
-      <br> This site contains a portfolio of my work across creative practices, with a focus on digital and visual design.
-      <br><br>
-      I'm currently working as an Interface Designer at RMIT research centre CODE. I'm interested in creating functional, beautiful designs in worlds that don't look like our own.     
-      <br><br>
-      When I’m not obsessing over making things look good, you can find me doing laps at the roller rink or plotting my next big adventure.
-      <br><br>
-      </p></a>
-   </div>
-   </div>
-  </section>
+            <p class="about-body">
+              I'm currently working as an Interface Designer and Assoc. Lecturer at RMIT.
+              I'm interested in creating functional, beautiful designs that support the worlds they're made for.
+            </p>
+            <p class="about-body">
+              When I'm not obsessing over making things look good, you can find me doing laps at the roller rink or
+              plotting my next big adventure.
+            </p>
+          </div>
+
+          <!-- Col 2: empty spacer -->
+          <div class="col col--spacer" aria-hidden="true"></div>
+
+          <!-- Col 3: portrait photo -->
+          <div class="col col--photo reveal">
+            <img src="images/Japan2025-5.jpg" alt="Charlotte Mitzi Galvin" class="about-photo" />
+          </div>
+
+        </section>
+        <h2 class="about-content-heading reveal">Credits</h2>
+        <!-- ── CREDITS SECTION ───────────────────── -->
+        <section class="about-section about-section--table">
+          <!-- Credits rows -->
+      <div class="table-row reveal">
+        <div class="col">My Dream PC — Lead Designer</div>
+        <div class="col">CODE RMIT</div>
+        <div class="col col--year">2024</div>
+      </div>
+      <div class="table-row reveal">
+        <div class="col">NEON SQUAD: TACTICS — Illustrator, Level Designer</div>
+        <div class="col">Tin Man Games</div>
+        <div class="col col--year">2023</div>
+      </div>
+      <div class="table-row reveal">
+        <div class="col">Reject Island — UI/UX & Game Designer</div>
+        <div class="col">Graduate Project</div>
+        <div class="col col--year">2021</div>
+      </div>
+
+      </section>
+
+      <h2 class="about-content-heading reveal">Experience</h2>
+      <!-- ── EXPERIENCE SECTION ────────────────── -->
+      <section class="about-section about-section--table">
+        <!-- Experience rows -->
+        <div class="table-row reveal">
+          <div class="col">Producer, Club Rat</div>
+          <div class="col">The Sequence Group</div>
+          <div class="col col--year">2026 - Current</div>
+          </div>
+          <div class="table-row reveal">
+            <div class="col">Associate Lecturer, Games</div>
+            <div class="col">RMIT</div>
+            <div class="col col--year">2025 — Current</div>
+          </div>
+          <div class="table-row reveal">
+            <div class="col">Interface Designer</div>
+            <div class="col">CODE RMIT</div>
+            <div class="col col--year">2023 — Current</div>
+          </div>
+          <div class="table-row reveal">
+            <div class="col">Sessional Tutor</div>
+            <div class="col">RMIT</div>
+            <div class="col col--year">2023 — 2025</div>
+          </div>
+
+      </section>
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-col">
+      <span class="footer-name"> <a href="/" class="footer-link">Charlotte Mitzi Galvin</a></span>
+      <span class="footer-year">2026</span>
+    </div>
+    <div class="footer-col">
+      <a href="/about.html" class="footer-link">About</a>
+    </div>
+    <div class="footer-col">
+      <a href="/contact.html" class="footer-link">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate once, don't reverse
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+  <script>
+    const COLOURS = ['blue', 'pink', 'orange', 'green'];
+
+    function nextColour(current) {
+      const idx = COLOURS.indexOf(current);
+      return COLOURS[(idx + 1) % COLOURS.length];
+    }
+
+    // Map colour names to your actual CSS values
+    const CSS_VALUES = {
+      blue: { full: '#1696ff', medium: 'rgba(22, 150, 255, 0.5)', light: 'rgba(22, 150, 255, 0.3)' },
+      pink: { full: '#d51553', medium: 'rgb(213, 21, 83, 0.5)', light: 'rgb(213, 21, 83, 0.3)' },
+      orange: { full: '#E6600C', medium: 'rgb(230, 96, 12, 0.5)', light: 'rgb(230, 96, 12, 0.3)' },
+      green: { full: '#5c9e00', medium: 'rgb(92, 158, 0, 0.5)', light: 'rgb(92, 158, 0, 0.3)' },
+    };
+
+    function applyColour(colour) {
+      document.documentElement.style.setProperty('--blue', CSS_VALUES[colour].full);
+      document.documentElement.style.setProperty('--blue-medium', CSS_VALUES[colour].medium);
+      document.documentElement.style.setProperty('--blue-light', CSS_VALUES[colour].light);
+    }
+
+    // ── Run on every page: just read and apply, don't advance ──
+    const saved = localStorage.getItem('accentColour') || 'blue';
+    applyColour(saved);
+  </script>
+
+</body>

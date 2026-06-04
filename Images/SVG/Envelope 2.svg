@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-2e4021eb-6cb5-4a59-9716-aacea6405d36" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1426.72 875.3">
+  <defs>
+    <style>
+      .uuid-2a161cb2-17af-49aa-9f98-014188dc77f0, .uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d, .uuid-b30edf7d-122a-48f9-90bf-a4c45361d070 {
+        stroke: #000;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d {
+        fill: none;
+      }
+
+      .uuid-b30edf7d-122a-48f9-90bf-a4c45361d070 {
+        fill: #f1f1f1;
+      }
+    </style>
+  </defs>
+  <g id="uuid-b22f40d5-5f05-49ee-bdce-7ef552ce1a06" data-name="Layer 1">
+    <g id="uuid-c88a8e07-47b6-40d6-8aa5-7bde6ec0d833" data-name="Evelope 2">
+      <rect class="uuid-2a161cb2-17af-49aa-9f98-014188dc77f0" x="1.37" y="22.3" width="1424" height="852" rx="22" ry="22"/>
+      <rect class="uuid-b30edf7d-122a-48f9-90bf-a4c45361d070" x="1.37" y="1" width="1424" height="852" rx="22" ry="22"/>
+      <line class="uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d" x1="453.15" y1="661.96" x2="973.59" y2="661.96"/>
+      <line class="uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d" x1="453.15" y1="727.44" x2="973.59" y2="727.44"/>
+      <line class="uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d" x1="453.15" y1="790.57" x2="973.59" y2="790.57"/>
+      <path class="uuid-0f031b2f-3f1b-4564-8e20-97cfaade6a9d" d="M1.37,161.3l618.6,355.45c41.97,24.11,93.42,24.84,136.05,1.91l669.35-359.93"/>
+    </g>
+  </g>
+</svg>

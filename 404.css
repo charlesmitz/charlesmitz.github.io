@@ -1,0 +1,153 @@
+
+/* =============================================
+   Fonts
+   ============================================= */
+
+.ojuju-bold {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fragment-mono-regular {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fragment-mono-regular-italic {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* =============================================
+   CSS Variables
+   ============================================= */
+:root {
+  --blue: #1696FF;
+  --blue-medium: rgba(22, 150, 255, 0.5);
+  --blue-light: rgba(22, 150, 255, 0.3);
+  --black: #111111;
+  --white: #ffffff;
+  --black-light: #c8c8c8;
+  --black-medium: rgba(0, 0, 0, 0.3);
+  --font-display: "Ojuju", sans-serif;
+  --font-body: "Fragment Mono", monospace;
+  --nav-height: 36px;
+  --page-padding: 28px;
+--nav-padding: 16px;
+  --max-width: 720px;
+  --transparent: #ffffff00;
+  --page-padding-sides: 48px;
+}
+
+
+ 
+/* =============================================
+   Reset & Base
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =============================================
+   Main
+   ============================================= */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      min-height: 0;
+      padding: 40px 24px;
+    }
+ 
+
+
+    /* ── 404 block ─────────────────────────────────────── */
+    .block-404 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+      animation: float 5s ease-in-out infinite;
+    }
+ 
+    /* Peach rectangle behind the number */
+    .block-404::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--blue-medium);
+      border-radius: 4px;
+      z-index: 0;
+ 
+      /* slightly oversized so it bleeds past the text */
+      top: -10%;
+      bottom: -10%;
+      left: -6%;
+      right: -6%;
+    }
+ 
+    .num-404 {
+      position: relative;
+      z-index: 1;
+      font-family: Ojuju;
+      font-size: clamp(6rem, 18vw, 14rem);
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1;
+      padding: 0.15em 0.3em;
+      user-select: none;
+    }
+ 
+    /* ── Subtitle ──────────────────────────────────────── */
+    .subtitle {
+      font-family: Ojuju;
+      font-weight: bold;
+      font-size: 3rem;
+      color: var(--text);
+      padding-top: 16px;
+      opacity: 0;
+      animation: fade-up 0.6s ease 0.3s forwards;
+    }
+ 
+    /* ── Animations ────────────────────────────────────── */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      30%       { transform: translateY(-10px) rotate(-0.8deg); }
+      70%       { transform: translateY(-6px) rotate(0.6deg); }
+    }
+ 
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+ 
