@@ -325,17 +325,16 @@ a {
   }
 }
 
-  @media screen and (max-width: 500px) {
-    .grid--2col {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 500px) {
+  .grid--2col {
+    grid-template-columns: 1fr;
+  }
 
-    .grid--3col {
-      grid-template-columns: 1fr;
-    }
+  .grid--3col {
+    grid-template-columns: 1fr;
+  }
 
-    .card-link {
-      aspect-ratio: 16/9;
-    }
+  .card-link {
+    aspect-ratio: 16/9;
   }
 }
