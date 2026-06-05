@@ -118,6 +118,7 @@ a {
   cursor: pointer;
   aspect-ratio: 1361/163;
   opacity: 0;
+  max-width: 100%
 }
 
 .hero-banner.loaded {
@@ -244,6 +245,7 @@ a {
   height: auto;
   object-fit: cover;
   scale: 1.01;
+  max-width: 100%
   /* slightly overfill to hide edge bleed */
 }
 

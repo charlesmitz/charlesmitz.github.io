@@ -54,6 +54,7 @@
   z-index: 100;
   display: flex;
   gap: 4px;
+  max-width: 100%
 }
  
 .nav-link {
@@ -91,6 +92,7 @@
   display: flex;
   gap: 18px;
   align-items: flex-start;
+  max-width: 100%
 }
  
 .footer-col {
