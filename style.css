@@ -272,19 +272,7 @@ a {
    Responsive
    ============================================= */
 
-@media screen and (max-width: 420px) {
-  .grid--2col {
-    grid-template-columns: 1fr;
-  }
-  .grid--3col {
-    grid-template-columns: 1fr 1fr;
-  }
-  .card-link {
-    aspect-ratio: 16/9;
-  }
-}
-
-@media (max-width: 560px) {
+@media (max-width:800px) {
   .main {
     padding-top: 96px;
   }
@@ -334,5 +322,20 @@ a {
   .hero-banner {
     /*  padding: 14px 24px 14px 16px; */
     padding: 0px;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+    .grid--2col {
+      grid-template-columns: 1fr;
+    }
+
+    .grid--3col {
+      grid-template-columns: 1fr;
+    }
+
+    .card-link {
+      aspect-ratio: 16/9;
+    }
   }
 }
