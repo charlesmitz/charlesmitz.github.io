@@ -231,6 +231,14 @@ a {
     grid-template-columns: 1fr;
   }
  
+.about-body {
+   padding: 6px 20px;
+}
+
+.about-photo{
+  align-self: center;
+}
+
   .col {
     border-right: none;
     border-bottom: 1.5px solid var(--blue);

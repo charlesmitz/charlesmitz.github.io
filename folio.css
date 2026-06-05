@@ -115,7 +115,7 @@
       padding-left: 48px;
       padding-right: var(--page-pad);
       padding-bottom: 48px;
-
+ height:100%; /*A value other than height:auto needs to be set*/
       opacity: 0; /* hidden until JS adds .is-visible */
     }
     .gallery-track::-webkit-scrollbar { display: none; }

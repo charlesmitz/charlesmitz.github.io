@@ -209,29 +209,6 @@ function applyColour(colour) {
   });
 }
 
-/*
-// ── On every page load: advance the colour ──────────────
-const saved = localStorage.getItem('accentColour') || 'blue';
-const current = nextColour(saved);   // cycle forward each visit
-localStorage.setItem('accentColour', current);
-applyColour(current);
-
-*/
-/*
-// ── Logo click: advance again immediately ───────────────
-document.querySelector('.hero')?.addEventListener('click', e => {
-  e.preventDefault();
-  const now = localStorage.getItem('accentColour');
-  const next = nextColour(now);
-  localStorage.setItem('accentColour', next);
-  applyColour(next);
-  // then navigate home
-  window.location.href = '/';
-});
-*/
-
-// index.js
-
 // On click: advance, set a flag, then navigate
 document.querySelector('.hero')?.addEventListener('click', e => {
   e.preventDefault();
