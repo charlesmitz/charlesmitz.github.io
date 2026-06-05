@@ -239,6 +239,10 @@ a {
   align-self: center;
 }
 
+.about-photo {
+  padding-left: -20px;
+}
+
   .col {
     border-right: none;
     border-bottom: 1.5px solid var(--blue);
