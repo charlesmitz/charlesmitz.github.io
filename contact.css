@@ -18,9 +18,7 @@ main{
   aspect-ratio: 1424/873;  /* adjust to your image's ratio */
 
   text-decoration: none;
-  transform-origin: center center;
-  animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
-  transition: transform 0.7s cubic-bezier(.34, 1.56, .64, 1);
+ 
 }
 
 .image-link img {
@@ -30,6 +28,9 @@ main{
 
 .image-link img.loaded {
     opacity: 1;
+     transform-origin: center center;
+  animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
+  transition: transform 0.7s cubic-bezier(.34, 1.56, .64, 1);
 }
 
 .image-link:hover {

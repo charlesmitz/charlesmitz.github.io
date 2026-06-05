@@ -244,6 +244,7 @@ a {
     border-bottom: 1.5px solid var(--blue);
   }
  .col--photo {
+  padding-left: 6px;
   padding-right: 6px;
  }
 
