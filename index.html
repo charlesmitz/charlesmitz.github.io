@@ -210,6 +210,36 @@
   });
 </script>
 
+   <script>
+  document.querySelectorAll('.hero-banner').forEach(img => {
+  if (img.complete) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+  }
+});
+</script>
+
+    <script>
+    const grids = document.querySelectorAll('.grid');
+ 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const grid = entry.target;
+          const cards = grid.querySelectorAll('.card');
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add('is-visible'), i * 150);
+          });
+          observer.unobserve(grid);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+ 
+    grids.forEach(grid => observer.observe(grid));
+  </script>
+
+
     <!--OLD SCRIPTS-->
     <!--
     <script>
