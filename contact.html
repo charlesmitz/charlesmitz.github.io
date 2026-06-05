@@ -44,8 +44,15 @@
       <a href="/contact.html" class="footer-link">Contact</a>
     </div>
   </footer>
-
-
+<script>
+document.querySelectorAll('img').forEach(img => {
+  if (img.complete) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+  }
+});
+</script>
 <script>
 const COLOURS = ['blue', 'pink', 'orange', 'green'];
 

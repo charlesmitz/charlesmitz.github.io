@@ -20,8 +20,18 @@ main{
   text-decoration: none;
   transform-origin: center center;
   animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
-  transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+  transition: transform 0.7s cubic-bezier(.34, 1.56, .64, 1);
 }
+
+.image-link img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-link img.loaded {
+    opacity: 1;
+}
+
 .image-link:hover {
   transform: rotate(-1.5deg) scale(1.015);
 }
@@ -29,6 +39,6 @@ main{
   transform: rotate(1deg) scale(0.99);
 }
 @keyframes fadeUp {
- from { opacity: 0; translate: 0 40px; }
+ from { opacity: 0; translate: 0 80px; }
   to   { opacity: 1; translate: 0 0; }
 }
