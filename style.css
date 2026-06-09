@@ -260,8 +260,14 @@ a {
   height: auto;
   object-fit: cover;
   scale: 1.01;
-  max-width: 100%
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   /* slightly overfill to hide edge bleed */
+}
+
+.card-image.loaded {
+  opacity: 1;
 }
 
 .card-footer {

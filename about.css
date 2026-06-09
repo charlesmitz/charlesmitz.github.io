@@ -150,6 +150,14 @@ a {
   border: 1px solid black;
   aspect-ratio: 1/1;
 }
+.about-photo img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-photo.loaded img {
+  opacity: 1;
+}
  
 .about-body {
   font-family: var(--font-body);

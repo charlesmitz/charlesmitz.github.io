@@ -234,6 +234,17 @@
     window.location.href = '/';
   });
 </script>
+
+<script>
+document.querySelectorAll('img').forEach(img => {
+  if (img.complete) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+  }
+});
+</script>
+
 <!---
     <script>
   document.querySelectorAll('.hero-banner').forEach(img => {
