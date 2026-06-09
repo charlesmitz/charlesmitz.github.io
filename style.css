@@ -143,6 +143,21 @@ a {
   transform: rotate(-3deg) scale(0.95);
 }
 
+.hero-banner-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  aspect-ratio: 1361/163;
+  opacity: 1;
+  max-width: 100%;
+   animation: fadeUp 0.7s cubic-bezier(.22, 1, .36, 1) forwards;
+  transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.hero-banner-svg:hover {
+  transform: rotate(-3deg) scale(0.95);
+}
 
 /* =============================================
    Bio
